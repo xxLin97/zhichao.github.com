@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Use COVID-19 api to show cases on the map
 
-You can use the [editor on GitHub](https://github.com/xxLin97/zhichao.github.com/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xxLin97/zhichao.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Step 1 & Step 2: 
+Set up React-Native on mac and Go through React-Native tutorial. 
+In the terminal we enter:  
+"
+-npm install -g expo-cli. 
+expo init myproject.    
+cd myproject.   
+npm start.   
+"
+Scan QR code then u can change lines in App.js, e.g. <Text>Hello World!</Text>.   
+Then on simulator screen u see the screenshot below.  
+![Image text](https://github.com/BUEC500C1/covid19-app-xxLin97/blob/master/WechatIMG8.jpeg)
+## Step 3: Develop use case to display a map. 
+In this part, I use the documentation from "https://github.com/react-native-community/react-native-maps" and you have to include maps in your library first.The code is modified in App.js and the result is shown below in this screenshot.  
+![Image text](https://github.com/BUEC500C1/covid19-app-xxLin97/blob/master/Simulator%20Screen%20Shot%20-%20iPhone%2012%20Pro%20Max%20-%202021-01-05%20at%2016.47.15.png). 
+## Step 4: Excercise COVID-19 API. 
+Type the code“https://api.covid19api.com/countries” then we get covid19 data of every countries and we save it to a json file called country.js  
+## Step 5: Overlay data on maps. 

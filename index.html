@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>hw1_zhichao: simple process on face image</title>
+</head>
+<body>
+	<p>1.original face image</p>
+	<h1>2.grayscale face image</h1>
+	<p>To get a gray image of a color image, I first split the original image into three channels, blue, green and red.<br>These three image arrays are all gray but each of them has its own color<br>For example, blue channel holds blue and red channel is a iimage that has more red vector.<br>You can either apply a average operater, which is a 3x3 matrix that that the average value and do the summation or u can simply take the average and add them up to form the grayscale image.</p>
+	<h1>3.processed face image</h1>
+	<p>The goal of this face processing function is to make this image flipped vertically and turn the color of it oppositely</p>
+	<h2>Reversing color</h2>
+	<p>To reverse to color of a image, I take the max value of pixel values in my image and subract it with each pixel value.<br>Take max value as 255 makes a little difference.</p>
+	<h2>Flip image vertically</h2>
+	<p>I have tried two method to flip a image, one using numpy.array and the other one using cv2 only. <br>I think converting an image to array is eazier to calculate and operate<br>The only thing is to turn each pixel symmetrically in an inverse order.</p>
+</body>
+</html>	
